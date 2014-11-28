@@ -86,14 +86,15 @@ os.environ['LD_LIBRARY_PATH'] = ':'.join(ld_library_path)
 # to use for creating service locators. and an id for generating
 # Ethernet addresses.
 hosts = []
-for i in range(1, 61):
-    hosts.append(('rc%02d' % i,
-                  '192.168.1.%d' % (100 + i),
+for i in range(1, 16):
+    hosts.append(('f%d' % i, 'f%d' % i,
+#'192.168.1.%d' % (100 + i),
                   i))
 
 # Host on which old master is run for running recoveries.
 # Need not be a member of hosts
-old_master_host = ('rcmaster', '192.168.1.1', 81)
+old_master_host = ('f16', 'f16', 81)
+#old_master_host = ('f16', '192.168.1.1', 81)
 
 # Full path to the directory containing RAMCloud executables.
 obj_path = '%s/%s' % (top_path, obj_dir)
@@ -105,11 +106,14 @@ second_backup_port = 12248
 
 # Command-line argument specifying where the first backup on each
 # server should storage the segment replicas.
-default_disk1 = '-f /dev/sda2'
+default_disk1 = '-f /data/ramcloud_data'
+#default_disk1 = ''
 
 # Command-line argument specifying where the second backup should
 # store its segment replicas.
-default_disk2 = '-f /dev/sdb2'
+#default_disk2 = '-f /dev/sdb2'
+default_disk1 = '-f /data/ramcloud_data2'
+default_disk2 = ''
 
 # Try to include local overrides.
 try:
