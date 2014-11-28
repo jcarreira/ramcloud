@@ -329,6 +329,7 @@ def readDist(name, options, cluster_args, client_args):
     print_cdf_from_log()
 
 def readDistRandom(name, options, cluster_args, client_args):
+    return
     cluster.run(client='%s/ClusterPerf %s %s' %
             (obj_path,  flatten_args(client_args), name),
             **cluster_args)
@@ -415,8 +416,8 @@ simple_tests = [
 ]
 
 graph_tests = [
-    Test("indexBasic", indexBasic),
-    Test("indexMultiple", indexMultiple),
+  Test("indexBasic", indexBasic),
+   Test("indexMultiple", indexMultiple),
     Test("indexScalability", indexScalability),
     Test("multiRead_general", multiOp),
     Test("multiRead_generalRandom", multiOp),
@@ -431,7 +432,7 @@ graph_tests = [
     Test("readThroughput", readThroughput),
     Test("readVaryingKeyLength", default),
     Test("writeAsyncSync", default),
-    Test("writeVaryingKeyLength", default),
+#    Test("writeVaryingKeyLength", default),
     Test("writeDistRandom", writeDist),
 ]
 
@@ -517,7 +518,7 @@ if __name__ == '__main__':
                         "readDistRandom",
                         "readThroughput",
                         "readVaryingKeyLength",
-                        "writeVaryingKeyLength"
+#                        "writeVaryingKeyLength"
                 ]
             for name in args:
                 for test in simple_tests:
