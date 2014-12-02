@@ -9,7 +9,7 @@
 # variables in the file private/MakefragPrivateTop.
 include $(wildcard private/MakefragPrivateTop)
 
-DEBUG ?= yes
+DEBUG ?= no
 YIELD ?= no
 SSE ?= sse4.2
 COMPILER ?= gnu
@@ -33,8 +33,7 @@ BASECFLAGS := -g
 OPTFLAG	 :=
 DEBUGFLAGS := -DTESTING=1 -fno-builtin
 else
-BASECFLAGS := -g
-OPTFLAG := -O3
+OPTFLAG := -Ofast
 DEBUGFLAGS := -DNDEBUG -Wno-unused-variable
 endif
 
