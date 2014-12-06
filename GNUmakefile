@@ -9,7 +9,7 @@
 # variables in the file private/MakefragPrivateTop.
 include $(wildcard private/MakefragPrivateTop)
 
-DEBUG ?= yes
+DEBUG ?= no
 YIELD ?= no
 SSE ?= sse4.2
 COMPILER ?= gnu
@@ -102,6 +102,10 @@ INFINIBAND = $(shell $(CXX) $(INCLUDES) $(EXTRACXXFLAGS) $(LIBS) -libverbs \
                          -o /dev/null src/HaveInfiniband.cc \
                          >/dev/null 2>&1 \
                          && echo yes || echo no)
+
+ifneq ($(INFINIBAND),yes)
+$(error Infiniband not found)
+endif
 
 ifeq ($(INFINIBAND),yes)
 COMFLAGS += -DINFINIBAND
