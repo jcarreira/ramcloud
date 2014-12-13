@@ -1105,6 +1105,7 @@ InfRcTransport::ServerRpc::sendReply()
         t->transmitCycleCounter.construct();
     }
     t->sendZeroCopy(&replyPayload, qp);
+    t->context->timeTrace->record("Send response:");
     interval.stop();
 
     replyPayload.truncateFront(sizeof(Header)); // for politeness
@@ -1298,6 +1299,7 @@ InfRcTransport::Poller::poll()
         int numRequests = t->infiniband->pollCompletionQueue(t->serverRxCq,
                 MAX_COMPLETIONS, wc);
         for (int i = 0; i < numRequests; i++) {
+            t->context->timeTrace->record("Received new request");
             ibv_wc* request = &wc[i];
             ReadRequestHandle_MetricSet::Interval interval
                 (&ReadRequestHandle_MetricSet::requestToHandleRpc);

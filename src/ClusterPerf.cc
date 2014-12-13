@@ -1444,7 +1444,7 @@ basic()
     if (clientIndex != 0)
         return;
     Buffer input, output;
-#define NUM_SIZES 5
+#define NUM_SIZES 1
     int sizes[] = {100, 1000, 10000, 100000, 1000000};
     TimeDist readDists[NUM_SIZES], writeDists[NUM_SIZES];
     const char* ids[] = {"100", "1K", "10K", "100K", "1M"};
@@ -1465,6 +1465,8 @@ basic()
         fillTable(dataTable, numObjects, keyLength, size);
         readDists[i] = readRandomObjects(dataTable, numObjects, keyLength,
                 100000, 2.0);
+
+        cluster->objectServerControl(dataTable, "abc", 3, WireFormat::LOG_TIME_TRACE);
         writeDists[i] =  writeRandomObjects(dataTable, numObjects, keyLength,
                 size, 100000, 2.0);
     }
