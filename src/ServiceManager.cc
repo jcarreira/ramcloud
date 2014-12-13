@@ -181,20 +181,20 @@ ServiceManager::handleRpc(Transport::ServerRpc* rpc)
         return;
     }
     // Temporary code to test how much faster things would be without threads.
-#if 0
+//#if 0
     if ((header->opcode == WireFormat::READ) &&
             (header->service == WireFormat::MASTER_SERVICE)) {
         rpc->enqueueThreadToStartWork.stop();
-        ReadThreadingCost_MetricSet::Interval  _(
-                &ReadThreadingCost_MetricSet::noThreadWork);
+       // ReadThreadingCost_MetricSet::Interval  _(
+       //         &ReadThreadingCost_MetricSet::noThreadWork);
         Service::Rpc serviceRpc(NULL, &rpc->requestPayload, &rpc->replyPayload);
         services[WireFormat::MASTER_SERVICE]->service.handleRpc(&serviceRpc);
-        _.stop();
+        //_.stop();
         rpc->returnToTransport.start();
         rpc->sendReply();
         return;
     }
-#endif
+//#endif
 
     serviceInfo->requestsRunning++;
 
