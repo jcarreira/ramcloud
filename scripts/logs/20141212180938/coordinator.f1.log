@@ -1,0 +1,16 @@
+1418436579.419809903 src/CoordinatorMain.cc:87 in main default NOTICE[30205:1]: Command line: /nscratch/joao/ramcloud/obj.master/coordinator -C infrc:host=f1,port=12248 -l NOTICE --logFile logs/20141212180938/coordinator.f1.log
+1418436579.422135066 src/InfRcTransport.cc:218 in InfRcTransport default NOTICE[30205:1]: InfRc listening on UDP: 10.10.49.83:12248
+1418436579.500104146 src/CoordinatorMain.cc:96 in main default NOTICE[30205:1]: coordinator: Listening on infrc:host=f1,port=12248
+1418436579.500148371 src/CoordinatorMain.cc:99 in main default NOTICE[30205:1]: PortTimeOut=-1
+1418436579.500157791 src/PortAlarm.cc:160 in PortAlarmTimer::setPortTimeout default NOTICE[30205:1]: Set PortTimeout to -1 (ms: -1 to disable.)
+1418436579.500173371 src/CoordinatorMain.cc:126 in main default NOTICE[30205:1]: Cluster name is 'main', external storage workspace is '/ramcloud/main/'
+1418436579.501200638 src/CoordinatorUpdateManager.cc:67 in CoordinatorUpdateManager::init default WARNING[30205:2]: couldn't find "coordinatorUpdateManager" object in external storage; starting new cluster from scratch
+1418436579.503391567 src/CoordinatorServerList.cc:386 in CoordinatorServerList::recover default NOTICE[30205:2]: CoordinatorServerList recovery completed: 0 master(s), 0 backup(s), 0 update(s) to disseminate, server list version is 0
+1418436579.503406498 src/TableManager.cc:776 in TableManager::recover default NOTICE[30205:2]: Table recovery complete: 0 table(s)
+1418436579.503429043 src/CoordinatorService.cc:107 in CoordinatorService::init default NOTICE[30205:2]: Coordinator state has been recovered from external storage; starting service
+1418436579.511678093 src/Dispatch.cc:150 in Dispatch::poll default NOTICE[30205:1]: Long gap in dispatcher: 129.9 ms
+1418436582.231804205 src/CoordinatorServerList.cc:133 in CoordinatorServerList::enlistServer default NOTICE[30205:3]: Enlisting server at infrc:host=f1,port=12249 (server id 1.0) supporting services: MASTER_SERVICE, PING_SERVICE, MEMBERSHIP_SERVICE
+1418436583.103765599 src/TableManager.cc:1038 in TableManager::createTable default NOTICE[30205:3]: Creating table 'data' with id 1
+1418436583.121619745 src/TableManager.cc:1296 in TableManager::notifyCreate default NOTICE[30205:3]: Assigning table id 1, key hashes 0x0-0xffffffffffffffff, to master 1.0
+1418436583.121788856 src/TableManager.cc:1038 in TableManager::createTable default NOTICE[30205:3]: Creating table 'control' with id 2
+1418436583.121805858 src/TableManager.cc:1296 in TableManager::notifyCreate default NOTICE[30205:3]: Assigning table id 2, key hashes 0x0-0xffffffffffffffff, to master 1.0
