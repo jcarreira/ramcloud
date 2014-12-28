@@ -1,0 +1,75 @@
+1419639890.541748372 src/Dispatch.cc:152 in Dispatch::poll default NOTICE[7223:1]: Long gap in dispatcher: 99.0 ms
+1419639890.542556154 src/CoordinatorSession.cc:105 in CoordinatorSession::getSession default NOTICE[7223:1]: Opened session with coordinator at infrc:host=f1,port=12246
+1419639890.662595142 src/ClusterPerf.cc:1433 in fillTable default NOTICE[7223:1]: write rate for 1000000-byte objects: 1.7 kobjects/sec, 1665.7 MB/sec
+1419639892.662947231 src/ClusterPerf.cc:716 in readRandomObjects default NOTICE[7223:1]: time expired after 11704 iterations
+1419639894.664194946 src/ClusterPerf.cc:830 in writeRandomObjects default NOTICE[7223:1]: time expired after 3390 iterations
+1419639894.776301065 src/ClusterPerf.cc:1433 in fillTable default NOTICE[7223:1]: write rate for 100000-byte objects: 17.9 kobjects/sec, 1786.9 MB/sec
+1419639896.776329904 src/ClusterPerf.cc:716 in readRandomObjects default NOTICE[7223:1]: time expired after 94133 iterations
+1419639898.780132593 src/ClusterPerf.cc:830 in writeRandomObjects default NOTICE[7223:1]: time expired after 32725 iterations
+1419639898.781571376 src/Buffer.cc:440 in Buffer::getNewAllocation default NOTICE[7223:1]: buffer has consumed 7728 bytes of extra storage, current allocation: 4416 bytes
+1419639898.781597267 src/Buffer.cc:440 in Buffer::getNewAllocation default NOTICE[7223:1]: buffer has consumed 15696 bytes of extra storage, current allocation: 8376 bytes
+1419639898.878751945 src/ClusterPerf.cc:1433 in fillTable default NOTICE[7223:1]: write rate for 10000-byte objects: 205.6 kobjects/sec, 2062.5 MB/sec
+1419639900.536734526 src/Buffer.cc:440 in Buffer::getNewAllocation default NOTICE[7223:1]: buffer has consumed 34224 bytes of extra storage, current allocation: 17664 bytes
+1419639900.536758620 src/Buffer.cc:440 in Buffer::getNewAllocation default NOTICE[7223:1]: buffer has consumed 69552 bytes of extra storage, current allocation: 35328 bytes
+1419639900.713628771 src/ClusterPerf.cc:1433 in fillTable default NOTICE[7223:1]: write rate for 1000-byte objects: 1097.5 kobjects/sec, 1130.4 MB/sec
+1419639902.483466597 src/ClusterPerf.cc:1433 in fillTable default NOTICE[7223:1]: write rate for 100-byte objects: 1755.1 kobjects/sec, 228.2 MB/sec
+basic.read100          3.0 us     read random 100B object (30B key) median
+basic.read100.min      2.9 us     read random 100B object (30B key) minimum
+basic.read100.9        3.4 us     read random 100B object (30B key) 90%
+basic.read100.99       3.8 us     read random 100B object (30B key) 99%
+basic.read100.999      4.9 us     read random 100B object (30B key) 99.9%
+basic.readBw100       30.4 MB/s   bandwidth reading 100B objects (30B key)
+basic.read1K           4.1 us     read random 1KB object (30B key) median
+basic.read1K.min       3.6 us     read random 1KB object (30B key) minimum
+basic.read1K.9         4.6 us     read random 1KB object (30B key) 90%
+basic.read1K.99        5.1 us     read random 1KB object (30B key) 99%
+basic.read1K.999       6.7 us     read random 1KB object (30B key) 99.9%
+basic.readBw1K       228.7 MB/s   bandwidth reading 1KB objects (30B key)
+basic.read10K          6.0 us     read random 10KB object (30B key) median
+basic.read10K.min      5.1 us     read random 10KB object (30B key) minimum
+basic.read10K.9        6.6 us     read random 10KB object (30B key) 90%
+basic.read10K.99       7.6 us     read random 10KB object (30B key) 99%
+basic.read10K.999      8.8 us     read random 10KB object (30B key) 99.9%
+basic.readBw10K        1.5 GB/s   bandwidth reading 10KB objects (30B key)
+basic.read100K        21.2 us     read random 100KB object (30B key) median
+basic.read100K.min    20.0 us     read random 100KB object (30B key) minimum
+basic.read100K.9      21.7 us     read random 100KB object (30B key) 90%
+basic.read100K.99     22.6 us     read random 100KB object (30B key) 99%
+basic.read100K.999    23.7 us     read random 100KB object (30B key) 99.9%
+basic.readBw100K       4.4 GB/s   bandwidth reading 100KB objects (30B key)
+basic.read1M         170.9 us     read random 1MB object (30B key) median
+basic.read1M.min     164.5 us     read random 1MB object (30B key) minimum
+basic.read1M.9       172.0 us     read random 1MB object (30B key) 90%
+basic.read1M.99      173.1 us     read random 1MB object (30B key) 99%
+basic.read1M.999     175.1 us     read random 1MB object (30B key) 99.9%
+basic.readBw1M         5.4 GB/s   bandwidth reading 1MB objects (30B key)
+basic.write100         4.3 us     write random 100B object (30B key) median
+basic.write100.min     4.0 us     write random 100B object (30B key) minimum
+basic.write100.9       4.6 us     write random 100B object (30B key) 90%
+basic.write100.99      5.0 us     write random 100B object (30B key) 99%
+basic.write100.999     7.0 us     write random 100B object (30B key) 99.9%
+basic.writeBw100      22.0 MB/s   bandwidth writing 100B objects (30B key)
+basic.write1K          5.5 us     write random 1KB object (30B key) median
+basic.write1K.min      5.2 us     write random 1KB object (30B key) minimum
+basic.write1K.9        5.9 us     write random 1KB object (30B key) 90%
+basic.write1K.99       6.4 us     write random 1KB object (30B key) 99%
+basic.write1K.999     10.7 us     write random 1KB object (30B key) 99.9%
+basic.writeBw1K      171.0 MB/s   bandwidth writing 1KB objects (30B key)
+basic.write10K        10.3 us     write random 10KB object (30B key) median
+basic.write10K.min     9.5 us     write random 10KB object (30B key) minimum
+basic.write10K.9      10.8 us     write random 10KB object (30B key) 90%
+basic.write10K.99     12.1 us     write random 10KB object (30B key) 99%
+basic.write10K.999    24.6 us     write random 10KB object (30B key) 99.9%
+basic.writeBw10K     919.2 MB/s   bandwidth writing 10KB objects (30B key)
+basic.write100K       60.8 us     write random 100KB object (30B key) median
+basic.write100K.min   57.8 us     write random 100KB object (30B key) minimum
+basic.write100K.9     61.8 us     write random 100KB object (30B key) 90%
+basic.write100K.99    73.0 us     write random 100KB object (30B key) 99%
+basic.write100K.999   76.2 us     write random 100KB object (30B key) 99.9%
+basic.writeBw100K      1.5 GB/s   bandwidth writing 100KB objects (30B key)
+basic.write1M        587.7 us     write random 1MB object (30B key) median
+basic.write1M.min    576.9 us     write random 1MB object (30B key) minimum
+basic.write1M.9      600.2 us     write random 1MB object (30B key) 90%
+basic.write1M.99     611.7 us     write random 1MB object (30B key) 99%
+basic.write1M.999    641.5 us     write random 1MB object (30B key) 99.9%
+basic.writeBw1M        1.6 GB/s   bandwidth writing 1MB objects (30B key)
