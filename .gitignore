@@ -20,3 +20,7 @@
 /scripts/localconfig.py
 TAGS
 tags
+
+scripts/logs/*
+*.d
+*.out
