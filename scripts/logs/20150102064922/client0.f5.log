@@ -1,0 +1,91 @@
+1420210169.513291499 src/Dispatch.cc:152 in Dispatch::poll default NOTICE[31801:1]: Long gap in dispatcher: 106.9 ms
+1420210169.514044102 src/CoordinatorSession.cc:105 in CoordinatorSession::getSession default NOTICE[31801:1]: Opened session with coordinator at infrc:host=f1,port=12246
+1420210169.769485642 src/ClusterPerf.cc:1433 in fillTable default NOTICE[31801:1]: write rate for 1000000-byte objects: 0.8 kobjects/sec, 782.3 MB/sec
+1420210171.769835643 src/ClusterPerf.cc:716 in readRandomObjects default NOTICE[31801:1]: time expired after 11642 iterations
+1420210173.770747808 src/ClusterPerf.cc:830 in writeRandomObjects default NOTICE[31801:1]: time expired after 1605 iterations
+1420210174.012378402 src/ClusterPerf.cc:1433 in fillTable default NOTICE[31801:1]: write rate for 100000-byte objects: 8.3 kobjects/sec, 828.0 MB/sec
+1420210176.012441140 src/ClusterPerf.cc:716 in readRandomObjects default NOTICE[31801:1]: time expired after 91730 iterations
+1420210178.016304104 src/ClusterPerf.cc:830 in writeRandomObjects default NOTICE[31801:1]: time expired after 13746 iterations
+1420210178.016924118 src/Buffer.cc:440 in Buffer::getNewAllocation default NOTICE[31801:1]: buffer has consumed 7728 bytes of extra storage, current allocation: 4416 bytes
+1420210178.016949114 src/Buffer.cc:440 in Buffer::getNewAllocation default NOTICE[31801:1]: buffer has consumed 15696 bytes of extra storage, current allocation: 8376 bytes
+1420210178.214336452 src/ClusterPerf.cc:1433 in fillTable default NOTICE[31801:1]: write rate for 10000-byte objects: 101.0 kobjects/sec, 1013.1 MB/sec
+1420210180.864141289 src/ClusterPerf.cc:830 in writeRandomObjects default NOTICE[31801:1]: time expired after 35977 iterations
+1420210180.865743713 src/Buffer.cc:440 in Buffer::getNewAllocation default NOTICE[31801:1]: buffer has consumed 34224 bytes of extra storage, current allocation: 17664 bytes
+1420210180.865764860 src/Buffer.cc:440 in Buffer::getNewAllocation default NOTICE[31801:1]: buffer has consumed 69552 bytes of extra storage, current allocation: 35328 bytes
+1420210181.188936325 src/ClusterPerf.cc:1433 in fillTable default NOTICE[31801:1]: write rate for 1000-byte objects: 595.0 kobjects/sec, 612.8 MB/sec
+1420210183.404387863 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210183.654376035 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210183.904374131 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210184.154372543 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210184.404370940 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210184.654369458 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210184.904367660 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210185.154366429 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210185.404364581 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210185.654363262 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210185.904361221 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210186.154359979 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210186.404358219 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210186.654356970 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210186.904354753 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210187.154353753 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210187.404351908 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210187.654350749 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210187.904348456 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210188.154347011 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210188.404345008 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210188.654343742 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210188.904341942 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210189.154340602 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210189.404338855 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210189.654337684 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210189.904335738 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210190.154334045 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210190.404332670 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210190.654331645 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210190.904329650 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210191.154328280 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210191.404326479 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210191.654325111 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210191.904323386 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210192.154321802 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210192.404320291 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210192.654318620 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210192.904316869 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210193.154315433 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210193.404313734 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210193.654312303 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210193.904310884 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210194.154309094 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210194.404307492 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210194.654306079 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210194.904304469 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210195.154303124 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210195.404301527 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210195.654299713 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210195.904298226 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210196.154296693 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210196.404295087 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210196.654293865 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210196.904292399 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210197.154290676 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210197.404288936 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210197.654287354 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210197.904285696 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210198.154284134 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210198.404283037 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210198.654281145 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210198.904279561 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210199.154278241 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210199.404276561 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210199.654275036 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210199.904273250 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210200.154271840 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210200.404270234 src/SessionAlarm.cc:222 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for WRITE to server at infrc:host=f3,port=12247 (ping succeeded)
+1420210200.904267906 src/SessionAlarm.cc:197 in SessionAlarmTimer::handleTimerEvent default WARNING[31801:1]: Aborting WRITE, PING to server at infrc:host=f3,port=12247 after 505 ms (server not responding)
+1420210200.904284649 src/InfRcTransport.cc:379 in InfRcTransport::InfRcSession::abort default NOTICE[31801:1]: InfRcTransport aborting WRITE request to infrc:host=f3,port=12247
+1420210200.904295574 src/InfRcTransport.cc:379 in InfRcTransport::InfRcSession::abort default NOTICE[31801:1]: InfRcTransport aborting PING request to infrc:host=f3,port=12247
+1420210200.904305475 src/SessionAlarm.cc:226 in SessionAlarmTimer::handleTimerEvent default NOTICE[31801:1]: Waiting for no active RPCs to server at infrc:host=f3,port=12247 (ping failed)
+1420210200.954994603 src/InfRcTransport.cc:673 in InfRcTransport::clientTrySetupQueuePair default WARNING[31801:1]: timed out waiting for response from 10.10.49.85:12247; retrying
+1420210201.405018193 src/InfRcTransport.cc:688 in InfRcTransport::clientTrySetupQueuePair default WARNING[31801:1]: failed to exchange with server (10.10.49.85:12247) within allotted 500000 microseconds (sent request 10 times)
+1420210201.405202882 src/TransportManager.cc:389 in TransportManager::openSessionInternal default WARNING[31801:1]: Couldn't open session for locator infrc:host=f3,port=12247 (failed to connect to host)
