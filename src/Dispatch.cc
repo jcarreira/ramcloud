@@ -82,7 +82,6 @@ Dispatch::Dispatch(bool hasDedicatedThread)
     , pollingTimes(NULL)
     , nextInd(0)
 {
-    std::cerr << "Dispatch::Dispatch()" << std::endl;
     Cycles::init();
     slowPollerCycles = Cycles::fromSeconds(.05);
     exitPipeFds[0] = exitPipeFds[1] = -1;

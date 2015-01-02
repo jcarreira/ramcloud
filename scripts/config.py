@@ -106,14 +106,16 @@ second_backup_port = 12248
 
 # Command-line argument specifying where the first backup on each
 # server should storage the segment replicas.
-default_disk1 = '-f /data/ramcloud_data'
+#default_disk1 = '-f /data/joao/ramcloud_data'
+default_disk1 = '-f /nscratch/joao/ramcloud_data'
 #default_disk1 = ''
 
 # Command-line argument specifying where the second backup should
 # store its segment replicas.
 #default_disk2 = '-f /dev/sdb2'
-default_disk1 = '-f /data/ramcloud_data2'
-default_disk2 = ''
+#default_disk1 = '-f /data/ramcloud_data2'
+default_disk2 = '-f /nscratch/joao/ramcloud_data2'
+#default_disk2 = ''
 
 # Try to include local overrides.
 try:

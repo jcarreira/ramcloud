@@ -33,7 +33,7 @@ BASECFLAGS := -g
 OPTFLAG	 :=
 DEBUGFLAGS := -DTESTING=1 -fno-builtin
 else
-OPTFLAG := -Ofast
+OPTFLAG := -O3
 DEBUGFLAGS := -DNDEBUG -Wno-unused-variable
 endif
 

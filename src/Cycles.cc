@@ -39,7 +39,6 @@ static Initialize _(Cycles::init);
  */
 void
 Cycles::init() {
-    std::cerr << "Cycles::init" << std::endl;
     if (cyclesPerSec != 0)
         return;
 
@@ -132,7 +131,6 @@ Cycles::toSeconds(uint64_t cycles, double cyclesPerSec)
 uint64_t
 Cycles::fromSeconds(double seconds, double cyclesPerSec)
 {
-    std::cerr << "Cycles::fromSeconds" << std::endl;
     if (cyclesPerSec == 0)
         cyclesPerSec = getCyclesPerSec();
     return (uint64_t) (seconds*cyclesPerSec + 0.5);

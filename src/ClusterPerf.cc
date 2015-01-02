@@ -1444,7 +1444,7 @@ basic()
     if (clientIndex != 0)
         return;
     Buffer input, output;
-#define NUM_SIZES 1
+#define NUM_SIZES 5
     int sizes[] = {100, 1000, 10000, 100000, 1000000};
     TimeDist readDists[NUM_SIZES], writeDists[NUM_SIZES];
     const char* ids[] = {"100", "1K", "10K", "100K", "1M"};

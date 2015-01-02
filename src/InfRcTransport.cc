@@ -462,9 +462,16 @@ InfRcTransport::InfRcSession::sendRequest(Buffer* request,
         return;
     }
 
-    LOG(DEBUG, "Sending %s request to %s with %u bytes",
-            WireFormat::opcodeSymbol(request), getServiceLocator().c_str(),
-            request->size());
+    //usleep(1);
+    int i = 0;
+    volatile int j =3;
+    for (;i<1000;++i){ 
+        i ++;
+        j += i*5;
+    }
+    //LOG(DEBUG, "Sending %s request to %s with %u bytes",
+    //        WireFormat::opcodeSymbol(request), getServiceLocator().c_str(),
+    //        request->size());
     if (request->size() > t->getMaxRpcSize()) {
         throw TransportException(HERE,
              format("client request exceeds maximum rpc size "
@@ -1260,10 +1267,17 @@ InfRcTransport::Poller::poll()
                                                  bd->buffer + sizeof(header),
                                                  len, t, t->clientSrq, bd);
                 }
-                LOG(DEBUG, "Received %s response from %s with %u bytes",
-                        WireFormat::opcodeSymbol(rpc.request),
-                        rpc.session->getServiceLocator().c_str(),
-                        rpc.response->size());
+                //usleep(1);
+                int i = 0;
+                volatile int j =3;
+                for (;i<10000;++i){ 
+                    i ++;
+                    j += i*5;
+                }
+                //LOG(DEBUG, "Received %s response from %s with %u bytes",
+                //        WireFormat::opcodeSymbol(rpc.request),
+                //        rpc.session->getServiceLocator().c_str(),
+                //        rpc.response->size());
                 rpc.state = ClientRpc::RESPONSE_RECEIVED;
                 ++metrics->transport.receive.messageCount;
                 ++metrics->transport.receive.packetCount;
